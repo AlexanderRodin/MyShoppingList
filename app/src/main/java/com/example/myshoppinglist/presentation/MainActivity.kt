@@ -81,6 +81,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupLongClickListener() {
         shopListAdapter.onShopItemLongClickListener = {
             Log.d("MainActivity", it.toString())
+//            TODO deal with work on long press
         }
     }
 
