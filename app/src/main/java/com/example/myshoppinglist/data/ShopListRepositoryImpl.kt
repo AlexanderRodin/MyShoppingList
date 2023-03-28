@@ -38,7 +38,6 @@ object ShopListRepositoryImpl : ShopListRepository {
         addShopItem(shopItem)
         }
 
-    @Throws(RuntimeException::class)
     override fun getShopItem(shopItemId: Int): ShopItem {
         return shopList.find { it.id == shopItemId }
             ?: throw RuntimeException("Element with id $shopItemId not found")
