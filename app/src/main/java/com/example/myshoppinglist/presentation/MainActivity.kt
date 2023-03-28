@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
                     ShopListAdapter.MAX_POL_SIZE
                 )
         }
-
         setupLongClickListener()
 
         setupClickListener()
