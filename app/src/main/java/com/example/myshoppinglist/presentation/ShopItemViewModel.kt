@@ -34,7 +34,7 @@ class ShopItemViewModel : ViewModel() {
         get() = _shouldCloseScreen
 
     fun getShopItem(itemId: Int) {
-        val item = getShopItemUseCase.getShopItem(itemId)
+            val item = getShopItemUseCase.getShopItem(itemId)
         _shopItem.value = item
     }
 

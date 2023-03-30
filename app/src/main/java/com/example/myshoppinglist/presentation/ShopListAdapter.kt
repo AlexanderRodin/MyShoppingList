@@ -24,7 +24,7 @@ class ShopListAdapter : ListAdapter<ShopItem, ShopItemViewHolder>(ShopItemDiffCa
 
     override fun onBindViewHolder(holder: ShopItemViewHolder, position: Int) {
         val shopItem = getItem(position)
-        holder.view.setOnClickListener {
+        holder.view.setOnLongClickListener {
             onShopItemLongClickListener?.invoke(shopItem)
             true
         }
